@@ -33,7 +33,7 @@
 - [ ] 1BP 가치 — 베리샵(베이비 등급+본인인증)에서만 확인 가능
 ### 제타 — 제외(창작자 현금 정산 없음, 수익 목표와 무관)
 ### 이미지
-- [x] 정정: 실사용 1순위는 NovelAI, 2순위 로컬 SD(Illustrious·Pony 계열), 3순위 플랫폼 내장. Nano Banana는 성인 이미지 불가라 보조만 (docs/30-image-assets/02-tools.md 상단)
+- [x] 정정: 실사용 1순위는 NovelAI, 2순위 로컬 SD(Illustrious·Pony 계열), 플랫폼 내장은 제외. 2026-10-22 NAI로 고정. Nano Banana는 성인 이미지 불가라 보조만 (docs/30-image-assets/02-tools.md 상단)
 - [x] 외장 이미지 방식 확인(research/12): 개인 도메인·Cloudflare R2 + `![](URL)` 코드표 + 고정댓글 공개 + 디버그 명령어, 작품당 200~700장 이상
 - [x] docs/30-image-assets/07-external-hosting.md 신설, README·image-brief·platform-mapping 개정
 - [x] 정책: 크랙 사용 가능(위반 이미지 우회만 최고 제재), 베이비챗 공식 허용, 케이브덕은 자체 서버. 비용: R2 무료 10GB·전송 무료 → 작품 10개+ 무료

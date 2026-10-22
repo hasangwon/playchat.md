@@ -10,7 +10,7 @@
 > |---|---|---|---|
 > | 1 | **NovelAI (NAI V4.5/V5)** | 국내 커뮤니티 표준. 애니·웹툰풍 품질, 성인 이미지 가능, Character Reference·Vibe Transfer로 동일 캐릭터 유지, 그림체(작가 태그) 공유 문화. Opus 월 $25 무제한 | 아카라이브 AI그림 채널 NAI 가이드·그림체 1,000종(arca.live/b/aiart/159947900, 154204833), 채널 위키 "NAI 일관성 있는 캐릭터 생성", 디시 Ai그림 여성향 갤 "NovelAI 입문부터 짤팁까지"(mini/aipicture/1246), 아카 웹소설 채널 "NovelAI 활용 A to Z"(webfiction/166306114), 포스타입 @um-moo NAI 공략 |
 > | 2 | **로컬/클라우드 Stable Diffusion** (WebUI·ComfyUI + Illustrious·NoobAI·Pony 계열 체크포인트, LoRA) | 무료·무제한·무검열, LoRA로 캐릭터 고정. GPU 필요. NoobAI는 출력물 상업 이용 금지라 수익 작품은 Illustrious 파생(라이선스 확인) 사용 | research/04 §2·§3, Civitai |
-> | 3 | **플랫폼 내장 생성기** | 정책 필터를 미리 통과, 바로 등록. 케이브덕 아트 스튜디오 Quill10-Anime(19+ 성인 가능, 가림 처리 기능), 베이비챗 AI 생성(130프로챗/장), 크랙(세이프티 전용, 95크래커/장) | research/09 I, research/10 K, research/04 |
+> | 제외 | 플랫폼 내장 생성기 | 상위 제작자 실사용 근거 없음(상위작은 외장 이미지, research/12). 기본 파이프라인에서 쓰지 않는다 | research/12 |
 > | 보조 | Nano Banana·GPT Image | 세이프티 프로필 이미지, 한글 텍스트가 들어간 썸네일, 배경 정도만 | — |
 >
 > **우리 기본 파이프라인**: NAI로 캐릭터 시트 생성 → Character Reference로 표정·상황 컷 → 언세이프는 업로드 전 불투명 가림(케이브덕 규정) → 프로필은 세이프티 기준 컷 별도. 대량 생산이 필요하면 로컬 SD + LoRA.
@@ -69,7 +69,7 @@
 | **월 2~3만 원** | **Google AI Pro(약 ₩29,000; Nano Banana Pro·2K/4K)** 또는 **NovelAI Opus($25; 언세이프·상업 OK·무제한)** 중 택1 + 무료 스택 | 세이프티 중심이면 Google AI Pro, 성인 캐릭터·애니 특화면 NAI Opus. ChatGPT Plus($20)는 한글 텍스트·스토리보드 보조 대체 가능 |
 | **월 10만 원** | Google AI Pro + NovelAI Opus + (Midjourney Standard $30 또는 Leonardo Premium $30) + 클라우드 ComfyUI(RunPod/RunComfy 시간제) 또는 로컬 GPU(RTX 4070 이상) + 플랫폼 재화(베이비챗 130프로챗×n, 케이브덕 윙, 크랙 95크래커×n) | 마스터·시트 = NB Pro, 표정·앨범 대량 = ComfyUI(Illustrious+IP-Adapter+LoRA), 배경·키비주얼 = MJ V8.2, NSFW 앨범 = NAI/케이브덕 Quill |
 
-핵심 결론(research/04 §7-3): **"Nano Banana Pro로 마스터·표정 세트 → 애니 계열(Illustrious/NoobAI 또는 NAI V4.5)로 대량 차분 → 플랫폼 비율 재단"**이 가장 비용 효율적. 플랫폼 내장 생성기는 정책 필터를 선통과하므로 최종 보정·추가 컷용으로 병행.
+~~핵심 결론(research/04 §7-3): Nano Banana Pro 마스터 → 애니 계열 차분~~ → **2026-10-22 폐기.** 도구는 NovelAI 고정(02-tools 상단 확정 블록). Nano Banana는 성인 불가라 세이프티 프로필·한글 썸네일 보조만.
 
 ## 5. 플랫폼별 규격 한눈표
 
