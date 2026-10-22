@@ -39,9 +39,16 @@
 - 크랙 배치표: `분류_상황` 예 `{{char}}_웃음`, `배경_옥상`
 - 베이비챗: 업로드 후 부여된 `img:[slug]`를 프롬프트/첫 대사에 기입
 
-## 4. 생성 도구와 설정
-- 도구: NovelAI (고정, docs/30-image-assets/02-tools.md 상단). 모델·그림체 태그: 
-- 시드/레퍼런스: Character Reference 이미지 = 마스터 레퍼런스 1장
+## 4. 생성 도구와 설정 (docs/30-image-assets/08-novelai-production.md)
+- 도구: NovelAI 웹. 모델: V5 Full (정밀 참조 필요 시 V4.5 Full). 832×1216, Steps 28, Guidance 5~6, Euler Ancestral, Add Quality Tags 끔
+- 그림체 카드: `assets/style-card.md` (작가 태그 블록 전문)
+- 캐릭터 프롬프트(고정): 
+- 0번 기본컷 시드: 
+- 표정 블록: 08번 §4 표 그대로 / 작품 전용 코드 10~ 블록:
+| 코드 | 이름 | 표정 블록 |
+|---|---|---|
+| 10 | | |
+- UC: 08번 §3 기본 UC + 작품별 추가: 
 - 후처리: 누끼 / 업스케일 / webp 변환(5MB 이하) / 언세이프 가림(불투명 유색)
 
 ## 5. 정책 셀프 체크 (업로드 전)

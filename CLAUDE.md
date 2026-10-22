@@ -19,7 +19,7 @@ make-playchat/
 │   ├── 00-overview.md        #   목적·범위·핵심 결론·워크플로우·용어 대응표
 │   ├── 10-platforms/         #   README(비교표·추천·전략) crack / caveduck / babechat-tookit / zeta / others
 │   ├── 20-character-design/  #   README(파이프라인·분량 예산) 01-concept … 08-testing-qa
-│   ├── 30-image-assets/      #   README 01-specs 02-tools 03-consistency 04-webtoon-intro 05-prompt-recipes 06-policy-checklist
+│   ├── 30-image-assets/      #   README 01-specs 02-tools 03-consistency 04-webtoon-intro 05-prompt-recipes 06-policy-checklist 07-external-hosting 08-novelai-production
 │   └── 40-growth/            #   README 01-trends 02-exposure 03-comments-ops 04-monetization 05-promotion 06-risks 07-case-studies
 ├── templates/                # character.master / lorebook / first-message / image-brief / platform-mapping
 ├── characters/               # 실제 제작 작품. 작품 1개 = 폴더 1개 (규칙: characters/README.md, 예시: _example/)
