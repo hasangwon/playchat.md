@@ -4,9 +4,11 @@
 > 세부 내용은 각 폴더의 `README.md` → 개별 문서 순으로 내려가며 읽는다 (progressive disclosure).
 
 ## 1. 프로젝트 한 줄 정의
-**기존 AI 캐릭터챗 플랫폼**(크랙·케이브덕·베이비챗/투킷·제타 등)에 올릴 **캐릭터/스토리 작품을 기획·작성·이미지 제작하고, 사용자가 로그인해 둔 플랫폼의 제작 폼에 Claude가 내용을 채워 제출**하는 프로젝트.
-- 플랫폼이나 앱을 **새로 개발하는 프로젝트가 아니다.** 코드베이스가 아니라 **콘텐츠 제작 지식 베이스 + 작업 파이프라인**이다.
-- 목표는 **수익(정산)과 승인(노출/오리지널 선정)**. 플랫폼별 수익 구조와 심사 기준에 맞춰 작품을 만든다.
+**AI 캐릭터챗을 "만드는 프롬프트와 시스템"을 설계·개발하는 프로젝트.** 캐릭터/작품 자체를 Claude가 임의로 만드는 것이 아니다.
+- 사용자가 컨셉·캐릭터·이미지 출처를 정하면, 이 시스템(문서·템플릿·스킬)이 그것을 플랫폼 규격에 맞는 작품으로 변환하고, 로그인된 플랫폼 폼에 입력·제출한다.
+- 플랫폼·앱을 새로 개발하지 않는다. 산출물은 **지식 베이스(docs) + 템플릿 + 스킬(절차)**.
+- Claude는 **컨셉·캐릭터·이미지 출처를 스스로 정하지 않는다.** 입력이 없으면 묻는다. `characters/_example/`은 형식 예시일 뿐이다.
+- 목표는 수익(정산)과 승인(노출/오리지널 선정)을 내는 작품을 반복 생산할 수 있는 시스템.
 
 ## 2. 폴더 구조 (정형화 패턴)
 ```
@@ -32,7 +34,7 @@ make-playchat/
 |---|---|
 | 프로젝트 파악 | `docs/00-overview.md` |
 | 어느 플랫폼에 올릴지 결정 | `docs/10-platforms/README.md` |
-| 새 캐릭터/스토리 기획·작성 | `.claude/skills/new-character/SKILL.md` → `docs/20-character-design/README.md` → `templates/character.master.md` (예시 `characters/_example/`) |
+| (사용자가 컨셉·캐릭터를 준 뒤) 작품 변환·작성 | `.claude/skills/new-character/SKILL.md` → `docs/20-character-design/README.md` → `templates/character.master.md` (예시 `characters/_example/`) |
 | 이미지 에셋 제작 | `docs/30-image-assets/README.md` → `templates/image-brief.md` |
 | 플랫폼 폼에 입력·제출 | `docs/10-platforms/<플랫폼>.md` → `templates/platform-mapping.md` → `.claude/skills/submit-<플랫폼>/SKILL.md` |
 | 출시 후 운영(노출·댓글·수익) | `docs/40-growth/README.md` |
