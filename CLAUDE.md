@@ -19,12 +19,12 @@ make-playchat/
 │   ├── 00-overview.md        #   목적·범위·핵심 결론·워크플로우·용어 대응표
 │   ├── 10-platforms/         #   README(비교표·추천·전략) crack / caveduck / babechat-tookit / zeta / others
 │   ├── 20-character-design/  #   README(파이프라인·분량 예산) 01-concept … 08-testing-qa
-│   ├── 30-image-assets/      #   README 01-specs 02-tools 03-consistency 04-webtoon-intro 05-prompt-recipes 06-policy-checklist 07-external-hosting 08-novelai-production
+│   ├── 30-image-assets/      #   README 01-specs 02-tools 03-consistency 04-webtoon-intro 05-prompt-recipes 06-policy-checklist 07-external-hosting 08-novelai-production 09-style-candidates
 │   └── 40-growth/            #   README 01-trends 02-exposure 03-comments-ops 04-monetization 05-promotion 06-risks 07-case-studies
-├── templates/                # character.master / lorebook / first-message / image-brief / platform-mapping
+├── templates/                # intake(사용자 입력) / character.master / lorebook / first-message / image-brief / platform-mapping
 ├── characters/               # 실제 제작 작품. 작품 1개 = 폴더 1개 (규칙: characters/README.md, 예시: _example/)
 ├── research/                 # 조사 원본 (날짜·출처 포함, README가 색인). docs의 근거. 수정하지 않고 추가만
-└── .claude/skills/           # new-character / submit-crack / submit-caveduck / submit-babechat
+└── .claude/skills/           # make-work(전체) / new-character / generate-assets / submit-crack / submit-caveduck / submit-babechat
 ```
 파일명 규칙: `NN-주제.md` (숫자 접두어 = 읽는 순서), 폴더마다 `README.md`가 색인. 날짜가 있는 스냅샷은 `주제-YYYY-MM-DD.md`.
 
@@ -32,9 +32,10 @@ make-playchat/
 | 하려는 일 | 먼저 읽을 것 |
 |---|---|
 | 프로젝트 파악 | `docs/00-overview.md` |
+| 작품 1개 전체 진행(접수→제출) | `.claude/skills/make-work/SKILL.md` → `templates/intake.md` |
 | 어느 플랫폼에 올릴지 결정 | `docs/10-platforms/README.md` |
 | (사용자가 컨셉·캐릭터를 준 뒤) 작품 변환·작성 | `.claude/skills/new-character/SKILL.md` → `docs/20-character-design/README.md` → `templates/character.master.md` (예시 `characters/_example/`) |
-| 이미지 에셋 제작 | `docs/30-image-assets/README.md` → `templates/image-brief.md` |
+| 이미지 에셋 제작 | `.claude/skills/generate-assets/SKILL.md` → `docs/30-image-assets/08-novelai-production.md` → `templates/image-brief.md` |
 | 플랫폼 폼에 입력·제출 | `docs/10-platforms/<플랫폼>.md` → `templates/platform-mapping.md` → `.claude/skills/submit-<플랫폼>/SKILL.md` |
 | 출시 후 운영(노출·댓글·수익) | `docs/40-growth/README.md` |
 | 근거 확인 | `research/README.md` → 해당 번호 파일 |

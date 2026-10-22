@@ -4,6 +4,7 @@
 
 ```
 characters/<slug>/
+├── intake.md          # 사용자 접수표 (templates/intake.md) — 컨셉·인물·외형의 유일한 출처
 ├── character.md       # 마스터 카드 (templates/character.master.md 복사) — 단일 진실 원천
 ├── lorebook.md        # 로어북·단축어 (templates/lorebook.md)
 ├── scenes/
@@ -11,7 +12,7 @@ characters/<slug>/
 │   └── 02-<name>.md
 ├── variants.md        # (선택) 언세이프티 파생본 등 변형판의 '차이점만' 기록. 공통부는 character.md
 ├── image-brief.md     # 이미지 브리프 (templates/image-brief.md)
-├── assets/            # profile.png, bg-*.png, expr-*.png, scene-*.png, intro-*.png, ending-*.png
+├── assets/            # raw/(NAI 원본 PNG, 커밋 안 함) · {캐릭터ID}/{상황코드}.webp(외장 업로드본) · profile.* · bg-* · intro-* · ending-*
 │   ├── style-card.md  #   설정 카드(모든 이미지 프롬프트에 복사하는 고정 블록) + 팔레트
 │   └── LICENSE.md     #   사용 도구·모델·라이선스 원문 링크·확인일 (수익화 작품 필수)
 ├── exports/           # 플랫폼별 변환본 (제출 직전 생성: crack.md, crack-unsafe.md, caveduck.md, babechat.md) — 수정 금지
