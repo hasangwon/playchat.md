@@ -10,6 +10,7 @@ description: 새 AI 캐릭터챗 작품을 기획부터 QA까지 만드는 절�
 2. `docs/10-platforms/README.md` — 어느 플랫폼에 올릴지, 독점 여부
 3. `docs/40-growth/01-trends.md` — 지금 먹히는 장르·제목 패턴
 4. `docs/20-character-design/README.md` — 파이프라인과 분량 예산표
+5. **`docs/20-character-design/09-top-works-standard.md` — 상위작 기준선(합격선). 작성 후 이 문서 항목별로 자체 점검**
 
 ## 1. 컨셉 확정 (입력 = `characters/<slug>/intake.md`, 양식 `templates/intake.md`)
 - 플랫폼(복수 가능, 독점이면 1개), 장르, 타깃(남성향/여성향/전체), 등급(세이프 본진 + 언세이프 파생 여부), 1:1 캐릭터인지 시뮬레이션/군상극(크랙 스토리형)인지.

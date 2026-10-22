@@ -16,6 +16,7 @@
 | `06-example-dialogue.md` | 예시 대화의 효과, 항상/상황 적용(케이브덕), 크랙 3개 제한, 템플릿 | 첫 메시지와 함께 |
 | `07-user-persona-memory.md` | 유저 페르소나·대화 프로필·유저노트, 기억력 유지, 플랫폼 메모리, 멀티 캐릭터 | 장기 플레이·군상극 설계 시 |
 | `08-testing-qa.md` | 테스트 체크리스트, 실패 패턴과 수정법, 플랫폼 테스트 도구, 공개 전 최종 체크 | 공개 직전 |
+| **`09-top-works-standard.md`** | **상위작 기준선**: 크랙·케이브덕·베이비챗 상위작 실측(research/16)에서 뽑은 노출 텍스트·시작 설정·프롬프트 5계층·시스템 장치·운영 표준 | **기획 시작 전 + 공개 전** |
 
 관련 문서: 플랫폼 결정은 `docs/10-platforms/README.md`, 마스터 카드 양식은 `templates/character.master.md`, 필드 변환은 `templates/platform-mapping.md`.
 
